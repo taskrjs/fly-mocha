@@ -1,6 +1,6 @@
-import Mocha from "mocha"
+const Mocha = require("mocha")
 
-export default function () {
+module.exports = function () {
   this.mocha = function (opts) {
     const mocha = new Mocha(opts)
     return new Promise((resolve, reject) => {

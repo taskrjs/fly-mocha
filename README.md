@@ -10,6 +10,8 @@
 [![npm package][npm-ver-link]][releases]
 [![][dl-badge]][npm-pkg-link]
 [![][travis-badge]][travis-link]
+[![][david-badge]][david-link]
+[![][david-dev-badge]][david-dev-link]
 [![][mit-badge]][mit]
 
 ## Usage
@@ -48,3 +50,7 @@ exports.test = function* () {
 [dl-badge]:     http://img.shields.io/npm/dm/fly-mocha.svg?style=flat-square
 [travis-link]:  https://travis-ci.org/bucaran/fly-mocha
 [travis-badge]: http://img.shields.io/travis/bucaran/fly-mocha.svg?style=flat-square
+[david-link]:      https://david-dm.org/bucaran/fly-mocha
+[david-badge]:     https://img.shields.io/david/bucaran/fly-mocha.svg?style=flat-square
+[david-dev-link]:  https://david-dm.org/bucaran/fly-mocha#info=devDependencies&view=table
+[david-dev-badge]: https://img.shields.io/david/dev/bucaran/fly-mocha.svg?style=flat-square

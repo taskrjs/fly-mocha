@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "fly-util": "^4.0.1",
-    "eslint": "^0.21.2",
+    "eslint": "^2.7.0",
     "tap-spec": "^4.0.2",
     "tape": "^4.0.0"
   },

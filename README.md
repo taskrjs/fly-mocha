@@ -7,7 +7,7 @@
 > [Mocha](http://mochajs.org/) plugin for _[Fly][fly]_.
 
 [![][fly-badge]][fly]
-[![npm package][npm-ver-link]][releases]
+[![npm package][npm-ver-link]][npm-pkg-link]
 [![][dl-badge]][npm-pkg-link]
 [![][travis-badge]][travis-link]
 [![][david-badge]][david-link]

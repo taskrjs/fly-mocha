@@ -40,17 +40,17 @@ exports.test = function* () {
 
 [mit]:          http://opensource.org/licenses/MIT
 [author]:       http://about.bucaran.me
-[contributors]: https://github.com/brj/fly-mocha/graphs/contributors
-[releases]:     https://github.com/brj/fly-mocha/releases
+[contributors]: https://github.com/bucaran/fly-mocha/graphs/contributors
+[releases]:     https://github.com/bucaran/fly-mocha/releases
 [fly]:          https://www.github.com/flyjs/fly
 [fly-badge]:    https://img.shields.io/badge/fly-JS-05B3E1.svg?style=flat-square
 [mit-badge]:    https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square
 [npm-pkg-link]: https://www.npmjs.org/package/fly-mocha
 [npm-ver-link]: https://img.shields.io/npm/v/fly-mocha.svg?style=flat-square
 [dl-badge]:     http://img.shields.io/npm/dm/fly-mocha.svg?style=flat-square
-[travis-link]:  https://travis-ci.org/brj/fly-mocha
-[travis-badge]: http://img.shields.io/travis/brj/fly-mocha.svg?style=flat-square
-[david-link]:      https://david-dm.org/brj/fly-mocha
-[david-badge]:     https://img.shields.io/david/brj/fly-mocha.svg?style=flat-square
-[david-dev-link]:  https://david-dm.org/brj/fly-mocha#info=devDependencies&view=table
-[david-dev-badge]: https://img.shields.io/david/dev/brj/fly-mocha.svg?style=flat-square
+[travis-link]:  https://travis-ci.org/bucaran/fly-mocha
+[travis-badge]: http://img.shields.io/travis/bucaran/fly-mocha.svg?style=flat-square
+[david-link]:      https://david-dm.org/bucaran/fly-mocha
+[david-badge]:     https://img.shields.io/david/bucaran/fly-mocha.svg?style=flat-square
+[david-dev-link]:  https://david-dm.org/bucaran/fly-mocha#info=devDependencies&view=table
+[david-dev-badge]: https://img.shields.io/david/dev/bucaran/fly-mocha.svg?style=flat-square

@@ -48,9 +48,9 @@ exports.test = function* () {
 [npm-pkg-link]: https://www.npmjs.org/package/fly-mocha
 [npm-ver-link]: https://img.shields.io/npm/v/fly-mocha.svg?style=flat-square
 [dl-badge]:     http://img.shields.io/npm/dm/fly-mocha.svg?style=flat-square
-[travis-link]:  https://travis-ci.org/bucaran/fly-mocha
-[travis-badge]: http://img.shields.io/travis/bucaran/fly-mocha.svg?style=flat-square
-[david-link]:      https://david-dm.org/bucaran/fly-mocha
-[david-badge]:     https://img.shields.io/david/bucaran/fly-mocha.svg?style=flat-square
-[david-dev-link]:  https://david-dm.org/bucaran/fly-mocha#info=devDependencies&view=table
-[david-dev-badge]: https://img.shields.io/david/dev/bucaran/fly-mocha.svg?style=flat-square
+[travis-link]:  https://travis-ci.org/flyjs/fly-mocha
+[travis-badge]: http://img.shields.io/travis/flyjs/fly-mocha.svg?style=flat-square
+[david-link]:      https://david-dm.org/flyjs/fly-mocha
+[david-badge]:     https://img.shields.io/david/flyjs/fly-mocha.svg?style=flat-square
+[david-dev-link]:  https://david-dm.org/flyjs/fly-mocha#info=devDependencies&view=table
+[david-dev-badge]: https://img.shields.io/david/dev/flyjs/fly-mocha.svg?style=flat-square

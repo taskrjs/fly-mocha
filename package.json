@@ -15,6 +15,13 @@
     "test-harmony": "node test-harmony"
   },
   "author": "Jorge Bucaran",
+  "contributors": [
+    {
+      "name": "Pine Mizune",
+      "email": "pinemz@gmail.com",
+      "url": "https://github.com/pine"
+    }
+  ],
   "dependencies": {
     "mocha": "^2.2.5"
   },

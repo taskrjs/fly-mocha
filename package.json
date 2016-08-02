@@ -23,7 +23,7 @@
     }
   ],
   "dependencies": {
-    "mocha": "^2.2.5"
+    "mocha": "^3.0.0"
   },
   "devDependencies": {
     "fly-util": "^4.0.1",

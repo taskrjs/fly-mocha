@@ -52,5 +52,5 @@ exports.test = function* () {
 [travis-badge]: http://img.shields.io/travis/flyjs/fly-mocha.svg?style=flat-square&maxAge=2592000
 [david-link]:      https://david-dm.org/flyjs/fly-mocha
 [david-badge]:     https://img.shields.io/david/flyjs/fly-mocha.svg?style=flat-square&maxAge=2592000
-[david-dev-link]:  https://david-dm.org/flyjs/fly-mocha#info=devDependencies&view=table
+[david-dev-link]:  https://david-dm.org/flyjs/fly-mocha?type=dev
 [david-dev-badge]: https://img.shields.io/david/dev/flyjs/fly-mocha.svg?style=flat-square&maxAge=2592000

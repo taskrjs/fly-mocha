@@ -26,8 +26,9 @@
     "mocha": "^3.0.0"
   },
   "devDependencies": {
-    "fly-util": "^4.0.1",
     "eslint": "^2.7.0",
+    "fly": "^2.0.0",
+    "fly-clear": "^1.0.0",
     "tap-spec": "^4.0.2",
     "tape": "^4.0.0"
   },

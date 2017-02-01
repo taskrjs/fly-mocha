@@ -1,33 +1,29 @@
-const test = require("tape").test
-const join = require("path").join
-const bind = require("fly-util").bind
-const state = {
-  pass: {
-    msg: "pass spec",
-    spec: [join("test", "spec", "pass.js")]
-  },
-  fail: {
-    msg: "fail spec",
-    spec: [join("test", "spec", "fail.js")]
-  }
-}
-const unwrap = function (f) { f(this.spec) }
+const {join} = require("path")
+const test = require("tape")
+const Fly = require("fly")
+
+const dir = join(__dirname, "spec")
 
 test("fly-mocha", function (t) {
-  t.plan(3)
+  t.plan(5)
 
-  const fly = {}
-  require(bind("../")).call(fly)
+  const fly = new Fly({
+    plugins: [require("../")],
+    tasks: {
+      * foo(f) {
+        f.emit = (str, obj) => {
+          t.equal(str, "plugin_error", "emits `plugin_error` on errors")
+          t.true(/1/.test(obj.error), "emits with # of errors")
+        }
+        yield f.source(`${dir}/pass.js`).mocha()
+        t.pass("pass spec")
+        yield f.source(`${dir}/fail.js`).mocha()
+        t.pass("fail spec")
+      }
+    }
+  })
 
-  t.ok(fly.mocha !== undefined, "inject mocha in fly instance")
+  t.true("mocha" in fly.plugins, "attach mocha() to fly")
 
-  fly.unwrap = unwrap.bind(state.pass)
-  fly.mocha()
-    .then(() => t.ok(true, state.pass.msg))
-    .catch(() => t.ok(false, state.pass.msg))
-
-  fly.unwrap = unwrap.bind(state.fail)
-  fly.mocha()
-    .then(() => t.ok(false, state.fail.msg))
-    .catch(() => t.ok(true, state.fail.msg))
+  fly.start("foo")
 })

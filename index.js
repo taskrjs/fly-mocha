@@ -1,14 +1,21 @@
+const {format} = require("path")
 const Mocha = require("mocha")
 
-module.exports = function () {
-  this.mocha = function (opts) {
+module.exports = {
+  name: "mocha",
+  every: false,
+  * func(files, opts) {
     const mocha = new Mocha(opts)
-    return new Promise((resolve, reject) => {
-      this.unwrap((files) => {
-        files.forEach(f => mocha.addFile(f))
-        mocha.run((failures) => failures > 0
-          ? reject(failures + " error(s).") : resolve())
-      })
+    for (const file of files) {
+      mocha.addFile( format(file) )
+    }
+    mocha.run(errors => {
+      if (errors > 0) {
+        return this.emit("plugin_error", {
+          error: `${errors} error(s).`,
+          plugin: "fly-mocha"
+        })
+      }
     })
   }
 }

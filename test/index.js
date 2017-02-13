@@ -1,4 +1,4 @@
-const {join} = require("path")
+const join = require("path").join
 const test = require("tape")
 const Fly = require("fly")
 

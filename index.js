@@ -1,4 +1,4 @@
-const {format} = require("path")
+const format = require("path").format
 const Mocha = require("mocha")
 
 module.exports = {

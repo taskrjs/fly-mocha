@@ -26,10 +26,12 @@ npm install -D fly-mocha
 ### Example
 
 ```js
-exports.test = function* () {
-  yield this
-    .source("spec/*Spec.js")
-    .mocha({ reporter: "nyan" })
+module.exports = {
+  *test(fly) {
+    yield fly
+      .source("spec/*Spec.js")
+      .mocha({ reporter: "nyan" })
+  },
 }
 ```
 
